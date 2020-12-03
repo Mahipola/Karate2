@@ -1,0 +1,87 @@
+<testsuite failures="0" name="FeatureFiles/karate11.feature" skipped="0" tests="5" time="0.381321">
+  <testcase classname="FeatureFiles.karate11" name="DDT Test Case 01" time="0.076278">
+    <system-out>Given url "https://reqres.in" ............................................. passed
+And path "/api/users?page=1" .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == "##" ........................................... passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.karate11" name="DDT Test Case 01" time="0.080107">
+    <system-out>Given url "https://reqres.in" ............................................. passed
+And path "/api/users?page=1" .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == "##" ........................................... passed
+Given url "https://reqres.in" ............................................. passed
+And path "/api/users?page=2" .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == "##" ........................................... passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.karate11" name="DDT Test Case 01" time="0.077186">
+    <system-out>Given url "https://reqres.in" ............................................. passed
+And path "/api/users?page=1" .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == "##" ........................................... passed
+Given url "https://reqres.in" ............................................. passed
+And path "/api/users?page=2" .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == "##" ........................................... passed
+Given url "https://reqres.in" ............................................. passed
+And path "/api/users?page=3" .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == "##" ........................................... passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.karate11" name="DDT Test Case 01" time="0.077225">
+    <system-out>Given url "https://reqres.in" ............................................. passed
+And path "/api/users?page=1" .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == "##" ........................................... passed
+Given url "https://reqres.in" ............................................. passed
+And path "/api/users?page=2" .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == "##" ........................................... passed
+Given url "https://reqres.in" ............................................. passed
+And path "/api/users?page=3" .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == "##" ........................................... passed
+Given url "https://reqres.in" ............................................. passed
+And path "/api/users?page=4" .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == "##" ........................................... passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.karate11" name="DDT Test Case 01" time="0.070524">
+    <system-out>Given url "https://reqres.in" ............................................. passed
+And path "/api/users?page=1" .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == "##" ........................................... passed
+Given url "https://reqres.in" ............................................. passed
+And path "/api/users?page=2" .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == "##" ........................................... passed
+Given url "https://reqres.in" ............................................. passed
+And path "/api/users?page=3" .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == "##" ........................................... passed
+Given url "https://reqres.in" ............................................. passed
+And path "/api/users?page=4" .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == "##" ........................................... passed
+Given url "https://reqres.in" ............................................. passed
+And path "/api/users?page=5" .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == "##" ........................................... passed</system-out>
+  </testcase>
+</testsuite>

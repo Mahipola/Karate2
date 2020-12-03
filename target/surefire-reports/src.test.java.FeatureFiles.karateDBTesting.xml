@@ -1,0 +1,50 @@
+<testsuite failures="0" name="src/test/java/FeatureFiles/karateDBTesting.feature" skipped="0" tests="4" time="0.65396">
+  <testcase classname="src.test.java.FeatureFiles.karateDBTesting" name="Select Statement TC" time="0.54086">
+    <system-out>* def db = Java.type('misc.MyDbUtil') ..................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "Karate" ............................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.FeatureFiles.karateDBTesting" name="Incert Statement TC" time="0.03688">
+    <system-out>* def db = Java.type('misc.MyDbUtil') ..................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "Karate" ............................................ passed
+* def db = Java.type('misc.MyDbUtil') ..................................... passed
+* def res = db.insertStatement("Insert into tools values(87,'Selenium','ttt')") . passed
+* print res ............................................................... passed
+* match res == "Success" .................................................. passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.FeatureFiles.karateDBTesting" name="Update Statement TC" time="0.045566">
+    <system-out>* def db = Java.type('misc.MyDbUtil') ..................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "Karate" ............................................ passed
+* def db = Java.type('misc.MyDbUtil') ..................................... passed
+* def res = db.insertStatement("Insert into tools values(87,'Selenium','ttt')") . passed
+* print res ............................................................... passed
+* match res == "Success" .................................................. passed
+* def db = Java.type('misc.MyDbUtil') ..................................... passed
+* def rowsAffected = db.updateStatement("update tools set toolName='WebDriver' where toolID=87") . passed
+* print rowsAffected ...................................................... passed
+* assert rowsAffected &gt;= 1 ................................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.FeatureFiles.karateDBTesting" name="Delete Statement TC" time="0.030654">
+    <system-out>* def db = Java.type('misc.MyDbUtil') ..................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "Karate" ............................................ passed
+* def db = Java.type('misc.MyDbUtil') ..................................... passed
+* def res = db.insertStatement("Insert into tools values(87,'Selenium','ttt')") . passed
+* print res ............................................................... passed
+* match res == "Success" .................................................. passed
+* def db = Java.type('misc.MyDbUtil') ..................................... passed
+* def rowsAffected = db.updateStatement("update tools set toolName='WebDriver' where toolID=87") . passed
+* print rowsAffected ...................................................... passed
+* assert rowsAffected &gt;= 1 ................................................ passed
+* def db = Java.type('misc.MyDbUtil') ..................................... passed
+* def rowsAffected = db.deleteStatement("delete from tools where toolID=87") . passed
+* print rowsAffected ...................................................... passed
+* assert rowsAffected &gt;= 1 ................................................ passed</system-out>
+  </testcase>
+</testsuite>

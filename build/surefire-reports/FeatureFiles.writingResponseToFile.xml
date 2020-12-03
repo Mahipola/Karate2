@@ -1,0 +1,37 @@
+<testsuite failures="0" name="FeatureFiles/writingResponseToFile.feature" skipped="0" tests="2" time="0.131357">
+  <testcase classname="FeatureFiles.writingResponseToFile" name="Example1" time="0.125919">
+    <system-out>* def lib = Java.type('misc.utils') ....................................... passed
+Given url "https://reqres.in/api/users/2" ................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def res2 = get response $.data .......................................... passed
+* lib.writeToFile("res2.json", res2) ...................................... passed
+* def res2 = read("classpath:res2.json") .................................. passed
+* print res1 .............................................................. passed
+* print res2 .............................................................. passed
+* print response.data.last_name ........................................... passed
+* print res2.last_name .................................................... passed
+* def name = res2.last_name ............................................... passed
+* def json1 = {"last_name" : #(name)} ..................................... passed
+* print json1 ............................................................. passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.writingResponseToFile" name="ex 2" time="0.005438">
+    <system-out>* def lib = Java.type('misc.utils') ....................................... passed
+Given url "https://reqres.in/api/users/2" ................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def res2 = get response $.data .......................................... passed
+* lib.writeToFile("res2.json", res2) ...................................... passed
+* def res2 = read("classpath:res2.json") .................................. passed
+* print res1 .............................................................. passed
+* print res2 .............................................................. passed
+* print response.data.last_name ........................................... passed
+* print res2.last_name .................................................... passed
+* def name = res2.last_name ............................................... passed
+* def json1 = {"last_name" : #(name)} ..................................... passed
+* print json1 ............................................................. passed
+* def custid = 1234 ....................................................... passed
+* def res2 = read("classpath:res2.json") .................................. passed
+* print res2 .............................................................. passed</system-out>
+  </testcase>
+</testsuite>

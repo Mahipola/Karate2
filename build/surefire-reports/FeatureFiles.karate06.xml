@@ -1,0 +1,15 @@
+<testsuite failures="0" name="FeatureFiles/karate06.feature" skipped="0" tests="1" time="0.340556">
+  <testcase classname="FeatureFiles.karate06" name="REST API Testing" time="0.340556">
+    <system-out>Given url "https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit" . passed
+And header Content-Type = "application/x-www-form-urlencoded" ............. passed
+And request "Celsius=40" .................................................. passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response contains "104" ......................................... passed
+And match response //string == "104" ...................................... passed
+And match responseHeaders['Server'] == ['Microsoft-IIS/7.5'] .............. passed
+And match responseHeaders['Server'][0] == 'Microsoft-IIS/7.5' ............. passed
+And match responseType == "xml" ........................................... passed
+And assert responseTime &lt;= 1000 ........................................... passed</system-out>
+  </testcase>
+</testsuite>

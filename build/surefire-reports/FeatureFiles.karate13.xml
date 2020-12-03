@@ -1,0 +1,29 @@
+<testsuite failures="0" name="FeatureFiles/karate13.feature" skipped="0" tests="3" time="0.022943">
+  <testcase classname="FeatureFiles.karate13" name="Static variable TC" time="0.010348">
+    <system-out>* def constants = Java.type('misc.automationConstants') ................... passed
+* print constants.devURL .................................................. passed
+* print constants.getDevUrl() ............................................. passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.karate13" name="Non Static variable TC" time="0.007683">
+    <system-out>* def constants = Java.type('misc.automationConstants') ................... passed
+* print constants.devURL .................................................. passed
+* print constants.getDevUrl() ............................................. passed
+* def env1 = .............................................................. passed
+* def qaUrl = call env1 ................................................... passed
+* print qaUrl ............................................................. passed
+* print env1() ............................................................ passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.karate13" name="Non Static variable TC" time="0.004913">
+    <system-out>* def constants = Java.type('misc.automationConstants') ................... passed
+* print constants.devURL .................................................. passed
+* print constants.getDevUrl() ............................................. passed
+* def env1 = .............................................................. passed
+* def qaUrl = call env1 ................................................... passed
+* print qaUrl ............................................................. passed
+* print env1() ............................................................ passed
+* def env1 = .............................................................. passed
+* def qaUrl = call env1 ................................................... passed
+* print qaUrl ............................................................. passed
+* print env1() ............................................................ passed</system-out>
+  </testcase>
+</testsuite>

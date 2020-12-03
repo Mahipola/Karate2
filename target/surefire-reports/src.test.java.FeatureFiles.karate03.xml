@@ -1,0 +1,18 @@
+<testsuite failures="1" name="src/test/java/FeatureFiles/karate03.feature" skipped="0" tests="1" time="0.065992">
+  <testcase classname="src.test.java.FeatureFiles.karate03" name="XML Test Case 02" time="0.065992">
+    <failure message="karate03.feature:32 - evaluation (js) failed: xml.info.tool[*].name, javax.script.ScriptException: &lt;eval&gt;:1:14 Expected an operand but found *&#13;&#10;xml.info.tool[*].name&#13;&#10;              ^ in &lt;eval&gt; at line number 1 at column number 14&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">Given def xml = ........................................................... passed
+Then print xml ............................................................ passed
+* match xml/info/id == 101 ................................................ passed
+* match xml.info.id == "101" .............................................. passed
+* match xml/info/tool[1] contains "&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;" . passed
+* match xml/info/tool[2] contains "&lt;name&gt;IntelliJ&lt;/name&gt;&lt;version&gt;2020.2&lt;/version&gt;" . passed
+* match xml.info.tool[*].name == "Karate" ................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate03.feature:32 - evaluation (js) failed: xml.info.tool[*].name, javax.script.ScriptException: &lt;eval&gt;:1:14 Expected an operand but found *&#13;
+xml.info.tool[*].name&#13;
+              ^ in &lt;eval&gt; at line number 1 at column number 14
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* match xml.info.tool[*].name == "Karate" (karate03.feature:32)</failure>
+  </testcase>
+</testsuite>

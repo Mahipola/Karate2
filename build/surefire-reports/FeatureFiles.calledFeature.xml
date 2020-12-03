@@ -1,0 +1,9 @@
+<testsuite failures="0" name="FeatureFiles/calledFeature.feature" skipped="0" tests="1" time="0.630902">
+  <testcase classname="FeatureFiles.calledFeature" name="URL and path test case 1" time="0.630902">
+    <system-out>Given url "https://reqres.in" ............................................. passed
+And path "/api/users?page=2" .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == "##" ........................................... passed</system-out>
+  </testcase>
+</testsuite>

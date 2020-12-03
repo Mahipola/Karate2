@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-@KarateOptions(tags = {"@soap"})
+//@KarateOptions(tags = {"@soap"})
 class KarateReportTest {
 
 
